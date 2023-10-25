@@ -52,8 +52,8 @@
             console.log("Name: " + nameValue);
 
             // You can also send the values to a server or perform any other necessary tasks.
+            Genesys("command", "Database.set", { messaging: { customAttributes: { Name: nameValue, Email: emailValue }}});
           });
-          Genesys("command", "Database.set", { messaging: { customAttributes: { Name: nameValue, Email: emailValue }}});
         </script>
     </body>
 </html>
