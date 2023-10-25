@@ -40,10 +40,12 @@
           });
         </script>
         <script>
+          let emailValue;
+          let nameValue;
           document.getElementById("submitButton").addEventListener("click", function () {
             // Get the input values
-            var emailValue = document.getElementById("email").value;
-            var nameValue = document.getElementById("name").value;
+            emailValue = document.getElementById("email").value;
+            nameValue = document.getElementById("name").value;
 
             // You can perform further actions with these values
             console.log("Email: " + emailValue);
