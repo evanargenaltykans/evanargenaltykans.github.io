@@ -8,8 +8,8 @@
         <br>
         <br>
         <script type="text/javascript" charset="utf-8">
-          Genesys ("subscribe", "Launcher.ready" , function(o){
-            console.log("The queue works!");
+          Genesys("subscribe", "Database.ready", function() {
+            console.log("Database plugin is ready.")
           });
         </script>
         <script>
