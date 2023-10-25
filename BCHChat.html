@@ -7,15 +7,17 @@
         <h1>Testing website for IT Service Desk chat.</h1>
         <br>
         <br>
-        <script type="text/javascript" charset="utf-8">
+        <script>
           Genesys("command", "Database.set"), {
-            messaging: {
-              customAttributes: {
-                Name: "Evan Argenal",
-                Email: "evan.argenal@tykans.com"
-              }
+          messaging: {
+            customAttributes: {
+              Name: "Evan Argenal",
+              Email: "evan.argenal@tykans.com"
             }
           }
+        }
+        </script>
+        <script type="text/javascript" charset="utf-8">
           (function (g, e, n, es, ys) {
             g['_genesysJs'] = e;
             g[e] = g[e] || function () {
