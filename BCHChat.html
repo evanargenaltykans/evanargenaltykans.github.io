@@ -30,14 +30,8 @@
           });
         </script>
         <script>
-          Genesys("command", "Database.set"), {
-          messaging: {
-            customAttributes: {
-              Name: "Evan Argenal",
-              Email: "evan.argenal@tykans.com"
-            }
-          }
-        }
+          Genesys("command", "Database.set", { messaging: { customAttributes: { Name: 'Evan Argenal' }}});
+          Genesys("command", "Database.set", { messaging: { customAttributes: { Email: 'evan.argenal@tykans.com' }}});
         </script>
     </body>
 </html>
